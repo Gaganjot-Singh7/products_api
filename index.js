@@ -7,7 +7,7 @@ require("./database/productModel.js")
 
 dotenv.config();
 server.get("/",(req,res)=>{
-    res.send("hi, im live")
+    res.send("hi,from gagan please add /api/products to get api data")
 })
 const port=process.env.port || 8080
 server.use("/api/products",router)
