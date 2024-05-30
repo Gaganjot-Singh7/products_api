@@ -24,5 +24,5 @@ try {
 }
 start();
 DbConnection();
-server.use('/.netlify/functions/server', router);
+
 
