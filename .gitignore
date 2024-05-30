@@ -32,3 +32,6 @@ temp/
 
 # Ignore everything in a directory called secrets
 secrets/
+
+# Local Netlify folder
+.netlify

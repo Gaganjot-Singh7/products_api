@@ -4,7 +4,7 @@ const server=express()
 const router=require("./router/index.js")
 const dotenv=require("dotenv");
 require("./database/productModel.js")
-const serverless = require('serverless-http');
+
 
 dotenv.config();
 server.get("/",(req,res)=>{
@@ -26,4 +26,3 @@ start();
 DbConnection();
 server.use('/.netlify/functions/server', router);
 
-module.exports.handler = serverless(router);
